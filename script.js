@@ -1,10 +1,15 @@
 document.addEventListener('DOMContentLoaded', function() {
-    var canvas = document.getElementById('birthday');
+    var canvas = document.getElementById('myCanvas');
     var ctx = canvas.getContext('2d');
 
-    // Make sure to set the size of the canvas
-    canvas.width = window.innerWidth;
-    canvas.height = window.innerHeight;
+    function resizeCanvas() {
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+        console.log(`Canvas resized to ${canvas.width}x${canvas.height}`);
+    }
+
+    resizeCanvas();
+    window.onresize = resizeCanvas;
 
     // helper functions
     const PI2 = Math.PI * 2;
@@ -20,12 +25,12 @@ document.addEventListener('DOMContentLoaded', function() {
         }
 
         resize() {
-            this.width = canvas.width = window.innerWidth;
+            this.width = canvas.width;
             let center = this.width / 2 | 0;
             this.spawnA = center - center / 4 | 0;
             this.spawnB = center + center / 4 | 0;
 
-            this.height = canvas.height = window.innerHeight;
+            this.height = canvas.height;
             this.spawnC = this.height * 0.1;
             this.spawnD = this.height * 0.5;
         }
@@ -134,9 +139,10 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     let birthday = new Birthday();
-    window.onresize = () => birthday.resize();
-    document.onclick = evt => birthday.onClick(evt);
-    document.ontouchstart = evt => birthday.onClick(evt);
+    document.addEventListener('click', evt => birthday.onClick(evt));
+    document.addEventListener('touchstart', evt => birthday.onClick(evt));
+
+    let then = timestamp();
 
     (function loop() {
         requestAnimationFrame(loop);

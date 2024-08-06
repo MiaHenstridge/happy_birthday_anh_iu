@@ -1,17 +1,24 @@
 document.addEventListener('DOMContentLoaded', function() {
     var canvas = document.getElementById('birthday');
     var ctx = canvas.getContext('2d');
+    let then = new Date().getTime(); // Initialize the timestamp
 
-    // Make sure to set the size of the canvas
-    canvas.width = window.innerWidth;
-    canvas.height = window.innerHeight;
+    // Set the size of the canvas
+    function resizeCanvas() {
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+        birthday.resize(); // Ensure resize logic is applied
+    }
 
-    // helper functions
+    resizeCanvas(); // Initial resize
+    window.onresize = resizeCanvas; // Handle window resizing
+
+    // Helper functions
     const PI2 = Math.PI * 2;
     const random = (min, max) => Math.random() * (max - min + 1) + min | 0;
     const timestamp = () => new Date().getTime();
 
-    // container
+    // Firework container class
     class Birthday {
         constructor() {
             this.resize();
@@ -20,12 +27,11 @@ document.addEventListener('DOMContentLoaded', function() {
         }
 
         resize() {
-            this.width = canvas.width = window.innerWidth;
+            this.width = canvas.width;
+            this.height = canvas.height;
             let center = this.width / 2 | 0;
             this.spawnA = center - center / 4 | 0;
             this.spawnB = center + center / 4 | 0;
-
-            this.height = canvas.height = window.innerHeight;
             this.spawnC = this.height * 0.1;
             this.spawnD = this.height * 0.5;
         }
@@ -72,12 +78,14 @@ document.addEventListener('DOMContentLoaded', function() {
                 this.counter = 0;
             }
 
+            // Remove dead fireworks
             if (this.fireworks.length > 1000) {
                 this.fireworks = this.fireworks.filter(firework => !firework.dead);
             }
         }
     }
 
+    // Firework class
     class Firework {
         constructor(x, y, targetX, targetY, shade, offsprings) {
             this.dead = false;
@@ -95,12 +103,11 @@ document.addEventListener('DOMContentLoaded', function() {
 
             let xDiff = this.targetX - this.x;
             let yDiff = this.targetY - this.y;
-            if (Math.abs(xDiff) > 3 || Math.abs(yDiff) > 3) { // is still moving
+            if (Math.abs(xDiff) > 3 || Math.abs(yDiff) > 3) { // Still moving
                 this.x += xDiff * 2 * delta;
                 this.y += yDiff * 2 * delta;
 
                 this.history.push({ x: this.x, y: this.y });
-
                 if (this.history.length > 20) this.history.shift();
             } else {
                 if (this.offsprings && !this.madeChilds) {
@@ -134,16 +141,16 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     let birthday = new Birthday();
-    window.onresize = () => birthday.resize();
-    document.onclick = evt => birthday.onClick(evt);
-    document.ontouchstart = evt => birthday.onClick(evt);
 
+    // Event listeners for clicks and touches
+    document.addEventListener('click', evt => birthday.onClick(evt));
+    document.addEventListener('touchstart', evt => birthday.onClick(evt));
+
+    // Animation loop
     (function loop() {
         requestAnimationFrame(loop);
-
         let now = timestamp();
         let delta = now - then;
-
         then = now;
         birthday.update(delta / 1000);
     })();

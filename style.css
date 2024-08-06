@@ -27,7 +27,7 @@ canvas {
     left: 50%;
     transform: translate(-50%, -50%);
     color: #fff;
-    font-size: 5em;
+    font-size: clamp(2rem, 3vw, 5rem);
     font-weight: 900;
     -webkit-user-select: none;
     user-select: none;
@@ -39,7 +39,7 @@ canvas {
     left: 50%;
     transform: translate(-50%, -50%);
     color: #fff;
-    font-size: 2em;
+    font-size: clamp(1rem, 2vw, 1.5rem);
     font-weight: 400;
     -webkit-user-select: none;
     user-select: none;
@@ -51,7 +51,7 @@ canvas {
     left: 50%;
     transform: translate(-50%, -50%);
     color: #fff;
-    font-size: 1.5em;
+    font-size: clamp(1rem, 2vw, 1.5rem);
     font-weight: 400;
     -webkit-user-select: none;
     user-select: none;
@@ -61,38 +61,3 @@ i {
     color: #fff;
 }
 
-/* Media Queries for Responsive Design */
-
-@media (max-width: 768px) {
-    .happy-birthday {
-        font-size: 4em;
-        top: 15%;
-    }
-
-    .wishes {
-        font-size: 1.5em;
-        top: 35%;
-    }
-
-    .from-thespacebard {
-        font-size: 1.2em;
-        bottom: 15%;
-    }
-}
-
-@media (max-width: 480px) {
-    .happy-birthday {
-        font-size: 3em;
-        top: 10%;
-    }
-
-    .wishes {
-        font-size: 1.2em;
-        top: 30%;
-    }
-
-    .from-thespacebard {
-        font-size: 1em;
-        bottom: 10%;
-    }
-}

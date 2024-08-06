@@ -61,3 +61,10 @@ i {
     color: #fff;
 }
 
+
+@media screen and (max-width: 64em) {
+  h1, p {
+    max-width: 80vw;
+    margin: auto;
+  }
+}

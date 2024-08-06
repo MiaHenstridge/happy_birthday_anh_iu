@@ -3,7 +3,6 @@
     margin: 0;
     box-sizing: border-box;
     font-family: "Raleway", sans-serif;
-
 }
 
 body {
@@ -17,9 +16,8 @@ body {
     cursor: crosshair;
 }
 
-
 canvas {
-    display:block;
+    display: block;
     z-index: -999;
 }
 
@@ -61,4 +59,40 @@ canvas {
 
 i {
     color: #fff;
+}
+
+/* Media Queries for Responsive Design */
+
+@media (max-width: 768px) {
+    .happy-birthday {
+        font-size: 4em;
+        top: 15%;
+    }
+
+    .wishes {
+        font-size: 1.5em;
+        top: 35%;
+    }
+
+    .from-thespacebard {
+        font-size: 1.2em;
+        bottom: 15%;
+    }
+}
+
+@media (max-width: 480px) {
+    .happy-birthday {
+        font-size: 3em;
+        top: 10%;
+    }
+
+    .wishes {
+        font-size: 1.2em;
+        top: 30%;
+    }
+
+    .from-thespacebard {
+        font-size: 1em;
+        bottom: 10%;
+    }
 }

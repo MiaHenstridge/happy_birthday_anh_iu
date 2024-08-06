@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-    var canvas = document.getElementById('birthday');
+    var canvas = document.getElementById('myCanvas');
     var ctx = canvas.getContext('2d');
 
     // Make sure to set the size of the canvas

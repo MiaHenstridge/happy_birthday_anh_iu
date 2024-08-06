@@ -1,13 +1,16 @@
 document.addEventListener('DOMContentLoaded', function() {
-    var canvas = document.getElementById('birthday');
+    var canvas = document.getElementById('myCanvas');
     var ctx = canvas.getContext('2d');
     let then = new Date().getTime(); // Initialize the timestamp
 
-    // Set the size of the canvas
+    // Create the birthday instance
+    let birthday = new Birthday();
+
+    // Function to resize the canvas and apply changes to birthday
     function resizeCanvas() {
         canvas.width = window.innerWidth;
         canvas.height = window.innerHeight;
-        birthday.resize(); // Ensure resize logic is applied
+        birthday.resize(); // Now birthday is defined
     }
 
     resizeCanvas(); // Initial resize
@@ -139,8 +142,6 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         }
     }
-
-    let birthday = new Birthday();
 
     // Event listeners for clicks and touches
     document.addEventListener('click', evt => birthday.onClick(evt));

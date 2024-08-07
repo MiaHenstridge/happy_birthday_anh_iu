@@ -22,7 +22,7 @@ body {
     margin: 0;
     font-family: "Poppins", sans-serif;
     min-height: 100vh;
-    /* display: grid; */
+    display: grid;
     place-content: center;
     text-align: center;
     background: var(--bg-color);
@@ -75,7 +75,8 @@ h1::after{
 }
 
 p {
-    font-size: clamp(0.95rem, 3vw + 1rem, 1rem);
+    font-size: clamp(1rem, 3vw + 1rem, 1.2rem);
+    position: relative;
     font-weight: 400;
     opacity: 0;
     transform: translateY(3rem);

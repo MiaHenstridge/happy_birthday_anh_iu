@@ -9,38 +9,45 @@
 
 /* global var config */
 :root{
-    --bg-color: #020202;
+    --bg-color: #1A223D;
     --typewriterSpeed: 5s;
     --typewriterCharacters: 14;
 }
+
 
 * {
     box-sizing: border-box;
 }
 
+
+
 body {
     margin: 0;
-    font-family: "Poppins", sans-serif;
+    font-family: "Hack", monospace;
     min-height: 100vh;
     display: grid;
     place-content: center;
     text-align: center;
-    background: var(--bg-color);
     cursor: crosshair;
+    background: var(--bg-color);
+    height: 100%;
+    overflow: hidden;
 }
+
+
 
 canvas {
     display: block;
+    width: 100%;
+    height: 100%;
     position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
     z-index: -99;
 }
 
+
 h1 {
     font-family: "Liberation Mono", monospace;
+    font-weight: 500;
     font-size: clamp(1rem, 3vw + 1rem, 4rem);
     position: relative;
     width: max-content;
@@ -84,20 +91,9 @@ p {
     color: #fff;
     -webkit-user-select: none;
     user-select: none;
+    max-width: 80vw;
+    margin: auto;
 }
-
-/* .from-thespacebard {
-    position: absolute;
-    bottom: 20%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: #fff;
-    font-size: clamp(1rem, 2vw, 1.5rem);
-    font-weight: 400;
-    -webkit-user-select: none;
-    user-select: none;
-} */
-
 
 
 /* animation typewriter effect */
@@ -123,6 +119,3 @@ p {
         transform: translateY(0);
     }
 }
-
-
-

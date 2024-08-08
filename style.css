@@ -1,8 +1,15 @@
-/* Tạo font-face Liberation Mono vì nó đéo có sẵn trên Google Font nhưng mà ny tôi thích font này và tôi chiều anh ý :)) */
+/* Tạo font-face Liberation Mono và Hack vì nó đéo có sẵn trên Google Font nhưng mà ny tôi thích font này và tôi chiều anh ý :)) */
 
 @font-face {
     font-family: 'Liberation Mono';
     src: url('./fonts/liberation_mono/LiberationMono-Regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Hack';
+    src: url('./fonts/hack/hack-regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }

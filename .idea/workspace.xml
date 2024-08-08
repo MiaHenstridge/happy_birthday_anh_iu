@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="d1408f94-d4e6-4ddc-b1b6-b71454fb4dbe" name="Changes" comment="edited font-size of small text" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" show_ignored="true">
+    <option name="groupingKeys">
+      <option value="directory" />
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
+  <component name="ProjectId" id="2kFCNhuv3UdKGXpYcJrue4pRGk9" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/05_projects/typing_animation&quot;
+  }
+}</component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d1408f94-d4e6-4ddc-b1b6-b71454fb4dbe" name="Changes" comment="" />
+      <created>1722869900804</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1722869900804</updated>
+    </task>
+    <task id="LOCAL-00001" summary="added script.js">
+      <option name="closed" value="true" />
+      <created>1722870028955</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1722870028955</updated>
+    </task>
+    <task id="LOCAL-00002" summary="updated cursor shape">
+      <option name="closed" value="true" />
+      <created>1722958754328</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1722958754328</updated>
+    </task>
+    <task id="LOCAL-00003" summary="changed script to after canvas">
+      <option name="closed" value="true" />
+      <created>1722959610592</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1722959610592</updated>
+    </task>
+    <task id="LOCAL-00004" summary="fix the script so that it still works on page reload">
+      <option name="closed" value="true" />
+      <created>1722959807775</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1722959807775</updated>
+    </task>
+    <task id="LOCAL-00005" summary="added ontouchstart to make sure it works on ios safari">
+      <option name="closed" value="true" />
+      <created>1722960064750</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1722960064750</updated>
+    </task>
+    <task id="LOCAL-00006" summary="added ontouchstart to make sure it works on ios safari">
+      <option name="closed" value="true" />
+      <created>1722960178480</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1722960178480</updated>
+    </task>
+    <task id="LOCAL-00007" summary="added ontouchstart to work on ios safari">
+      <option name="closed" value="true" />
+      <created>1722960281611</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1722960281611</updated>
+    </task>
+    <task id="LOCAL-00008" summary="revert previous changes">
+      <option name="closed" value="true" />
+      <created>1722960342669</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1722960342669</updated>
+    </task>
+    <task id="LOCAL-00009" summary="revert previous changes">
+      <option name="closed" value="true" />
+      <created>1722960389946</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1722960389946</updated>
+    </task>
+    <task id="LOCAL-00010" summary="revert previous changes">
+      <option name="closed" value="true" />
+      <created>1722960423254</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1722960423254</updated>
+    </task>
+    <task id="LOCAL-00011" summary="revert previous changes">
+      <option name="closed" value="true" />
+      <created>1722960848818</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1722960848818</updated>
+    </task>
+    <task id="LOCAL-00012" summary="bruh, yet another edit">
+      <option name="closed" value="true" />
+      <created>1722961037765</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1722961037765</updated>
+    </task>
+    <task id="LOCAL-00013" summary="revert to original version of script.js">
+      <option name="closed" value="true" />
+      <created>1722961287817</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1722961287817</updated>
+    </task>
+    <task id="LOCAL-00014" summary="added changes for mobile-friendliness">
+      <option name="closed" value="true" />
+      <created>1722961925124</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1722961925124</updated>
+    </task>
+    <task id="LOCAL-00015" summary="added changes for mobile-friendliness">
+      <option name="closed" value="true" />
+      <created>1722962840023</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1722962840023</updated>
+    </task>
+    <task id="LOCAL-00016" summary="added changes for mobile-friendliness">
+      <option name="closed" value="true" />
+      <created>1722962920885</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1722962920885</updated>
+    </task>
+    <task id="LOCAL-00017" summary="added typewriter effect so that it looks fancy">
+      <option name="closed" value="true" />
+      <created>1723046153242</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1723046153242</updated>
+    </task>
+    <task id="LOCAL-00018" summary="edited font-size of small text">
+      <option name="closed" value="true" />
+      <created>1723047435158</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1723047435158</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="added script.js" />
+    <MESSAGE value="updated cursor shape" />
+    <MESSAGE value="changed script to after canvas" />
+    <MESSAGE value="fix the script so that it still works on page reload" />
+    <MESSAGE value="added ontouchstart to make sure it works on ios safari" />
+    <MESSAGE value="added ontouchstart to work on ios safari" />
+    <MESSAGE value="revert previous changes" />
+    <MESSAGE value="bruh, yet another edit" />
+    <MESSAGE value="revert to original version of script.js" />
+    <MESSAGE value="added changes for mobile-friendliness" />
+    <MESSAGE value="added typewriter effect so that it looks fancy" />
+    <MESSAGE value="edited font-size of small text" />
+    <option name="LAST_COMMIT_MESSAGE" value="edited font-size of small text" />
+  </component>
+</project>

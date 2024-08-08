@@ -4,6 +4,8 @@ window.onload = function() {
     if (canvas.className === 'night-sky') {
         console.log('current mode: night');
         setTimeout(start, 100);
+    } else if (canvas.className === 'day-sky') {
+        console.log('current mode: day');
     }
 };
 
@@ -76,14 +78,15 @@ function start() {
         layers = [                                      // edit layer specs later, maybe add more layers?
             {speed: 0.015, scale: 0.2, count: 500},
             {speed: 0.03, scale: 0.35, count: 100},
-            {speed: 0.05, scale: 0.75, count: 50},
-            {speed: 0.1, scale: 1, count: 10},
+            {speed: 0.05, scale: 0.55, count: 50},
+            {speed: 0.1, scale: 0.75, count: 10},
         ],
         starsAngle = 155,                               // edit this later
         shootingStarSpeed = {                           // edit this later
             min: 15,
             max: 30
         },
+        starOpacityDelta = 0.5,
         shootingStarOpacityDelta = 0.01,
         trailLengthDelta = 0.01,
         shootingStarEmittingInterval = 2000,
@@ -111,7 +114,7 @@ function start() {
         shootingStar.setSpeed(randomRange(shootingStarSpeed.min, shootingStarSpeed.max));
         shootingStar.setHeading(degreesToRads(starsAngle));
         shootingStar.radius = shootingStarRadius;
-        shootingStar.opacity = 0;
+        shootingStar.opacity = randomRange(0.0, 1.0);
         shootingStar.trailLengthDelta = 0;
         shootingStar.isSpawning = true;
         shootingStar.isDying = false;
@@ -124,7 +127,7 @@ function start() {
         }, shootingStarLifeTime);
     }
 
-    function update() {
+    function updateShootingStar() {
         if (!paused) {
             ctx.clearRect(0, 0, width, height);
             // Create a linear gradient
@@ -189,8 +192,9 @@ function start() {
                 }
             }
         }
-        requestAnimationFrame(update);
+        requestAnimationFrame(updateShootingStar);
     }
+
     function drawStar(star) {
         ctx.fillStyle = "rgb(255, 221, 157)";
         ctx.beginPath();
@@ -238,7 +242,7 @@ function start() {
     }
 
     // Run
-    update();
+    updateShootingStar();
 
     // Shooting stars
     setInterval(function() {

@@ -30,7 +30,7 @@ body {
     text-align: center;
     cursor: crosshair;
     background: var(--bg-color);
-
+    height: 100%;
 }
 
 

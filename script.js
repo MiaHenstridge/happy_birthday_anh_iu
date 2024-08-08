@@ -130,9 +130,9 @@ function start() {
             // Create a linear gradient
             const gradient = ctx.createLinearGradient(0, 0, 0, canvas.height);
 
-            // Add color stops for a more vibrant night sky with northern lights effect
-            gradient.addColorStop(0, '#360654'); // Top color
-            gradient.addColorStop(1, '#17636A'); // Bottom color
+            // Add color stops 
+            gradient.addColorStop(0, '#020107'); // Top color #360654
+            gradient.addColorStop(1, '#201b46'); // Bottom color #17636A
 
             // Use the gradient as the fill style
             ctx.fillStyle = gradient;

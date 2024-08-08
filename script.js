@@ -1,6 +1,10 @@
 "use-strict";
 window.onload = function() {
-    setTimeout(start, 100);
+    var canvas = document.getElementById('canvas');
+    if (canvas.className === 'night-sky') {
+        console.log('current mode: night');
+        setTimeout(start, 100);
+    }
 };
 
 function start() {
@@ -75,10 +79,10 @@ function start() {
             {speed: 0.05, scale: 0.75, count: 50},
             {speed: 0.1, scale: 1, count: 10},
         ],
-        starsAngle = 145,                               // edit this later
+        starsAngle = 155,                               // edit this later
         shootingStarSpeed = {                           // edit this later
             min: 15,
-            max: 20
+            max: 30
         },
         shootingStarOpacityDelta = 0.01,
         trailLengthDelta = 0.01,

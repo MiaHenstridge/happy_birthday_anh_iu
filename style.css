@@ -31,6 +31,7 @@ body {
     cursor: crosshair;
     background: var(--bg-color);
     height: 100%;
+    overflow: hidden;
 }
 
 

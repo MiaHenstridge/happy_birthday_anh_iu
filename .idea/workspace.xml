@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d1408f94-d4e6-4ddc-b1b6-b71454fb4dbe" name="Changes" comment="disable ios automatic detection of numbers as clickable links in text">
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+    <list default="true" id="d1408f94-d4e6-4ddc-b1b6-b71454fb4dbe" name="Changes" comment="Changed title of page">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -221,7 +222,15 @@
       <option name="project" value="LOCAL" />
       <updated>1723210333551</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Changed title of page">
+      <option name="closed" value="true" />
+      <created>1723211439308</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1723211439308</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -251,6 +260,7 @@
     <MESSAGE value="added heart rain effect in day mode" />
     <MESSAGE value="changed heart size to smaller (1rem)" />
     <MESSAGE value="disable ios automatic detection of numbers as clickable links in text" />
-    <option name="LAST_COMMIT_MESSAGE" value="disable ios automatic detection of numbers as clickable links in text" />
+    <MESSAGE value="Changed title of page" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changed title of page" />
   </component>
 </project>

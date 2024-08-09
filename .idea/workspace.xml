@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d1408f94-d4e6-4ddc-b1b6-b71454fb4dbe" name="Changes" comment="added heart rain effect in day mode">
+    <list default="true" id="d1408f94-d4e6-4ddc-b1b6-b71454fb4dbe" name="Changes" comment="changed heart size to smaller (1rem)">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -197,7 +198,15 @@
       <option name="project" value="LOCAL" />
       <updated>1723209553834</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="changed heart size to smaller (1rem)">
+      <option name="closed" value="true" />
+      <created>1723209773507</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1723209773507</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -225,6 +234,7 @@
     <MESSAGE value="added typewriter effect so that it looks fancy" />
     <MESSAGE value="edited font-size of small text" />
     <MESSAGE value="added heart rain effect in day mode" />
-    <option name="LAST_COMMIT_MESSAGE" value="added heart rain effect in day mode" />
+    <MESSAGE value="changed heart size to smaller (1rem)" />
+    <option name="LAST_COMMIT_MESSAGE" value="changed heart size to smaller (1rem)" />
   </component>
 </project>

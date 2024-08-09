@@ -1,4 +1,19 @@
 "use-strict";
+function createHeart() {
+    const heart = document.createElement('div');
+    heart.classList.add('heart');
+    heart.style.left = Math.random() * 100 + 'vw';
+    heart.style.animationDuration = Math.random() * 2 + 3 + "s";
+//    heart.style.zIndex = "-1";
+    heart.innerText = '\u2764';
+    document.body.appendChild(heart);
+    setTimeout(() => {
+        heart.remove();
+    }, 5000);
+}
+
+let heartRain;
+
 // Day mode background
 function start_day_mode() {
     // Canvas and settings
@@ -29,6 +44,7 @@ function start_day_mode() {
 
     // Run
     updateDaySky();
+    heartRain = setInterval(createHeart, 300);
 
     window.onfocus = function() {
         paused = false;
@@ -123,6 +139,12 @@ function start_night_mode() {
         shootingStarRadius = 3,
         paused = false;                                 // keep this set to false all the time so that shooting stars keep going
 
+//    window.addEventListener('resize', () => {
+//        var canvas = document.getElementById('canvas'),
+//        ctx = canvas.getContext('2d'),
+//        width = canvas.width = window.innerWidth,
+//        height = canvas.height = window.innerHeight;
+//    });
 
     // Create all stars
     for (var j = 0; j < layers.length; j += 1) {
@@ -298,6 +320,11 @@ function enableDarkMode(){
     themeToggle.setAttribute("aria-label", "Switch to light theme");
     themeToggle.setAttribute("title", "Switch to light theme");
     themeToggle.setAttribute("data-attribute", "dark");
+
+    // Clear heart rain effect
+    clearInterval(heartRain);
+    document.querySelectorAll('.heart').forEach(heart => heart.remove());
+
     setTimeout(start_night_mode, 100);
 };
 
@@ -307,6 +334,7 @@ function enableLightMode(){
     themeToggle.setAttribute("aria-label", "Switch to dark theme");
     themeToggle.setAttribute("title", "Switch to dark theme");
     themeToggle.setAttribute("data-attribute", "light");
+
     setTimeout(start_day_mode, 100);
 };
 

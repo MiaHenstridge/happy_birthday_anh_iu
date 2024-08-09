@@ -130,6 +130,14 @@ p {
     margin: auto;
 }
 
+.heart {
+    position: fixed;
+    font-size: 1.5rem;
+    top: -1vh;
+    transform: translateY(0);
+    animation: fall 3s linear forwards;
+}
+
 /* theme toggle button */
 #theme-toggle{
     position:fixed;
@@ -196,5 +204,17 @@ p {
     to {
         opacity: 1;
         transform: translateY(0);
+    }
+}
+
+/* heart rain animation */
+@keyframes fall {
+    from {
+        transform: translateY(0vh) translateX(-10vw) rotate(5deg);
+        opacity: 0.9;
+    }
+    to {
+        transform: translateY(105vh) translateX(10vw) rotate(-5deg);
+        opacity: 0;
     }
 }

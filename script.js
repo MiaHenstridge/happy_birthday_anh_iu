@@ -1,15 +1,42 @@
 "use-strict";
-window.onload = function() {
-    var canvas = document.getElementById('canvas');
-    if (canvas.className === 'night-sky') {
-        console.log('current mode: night');
-        setTimeout(start, 100);
-    } else if (canvas.className === 'day-sky') {
-        console.log('current mode: day');
-    }
-};
+// Day mode background
+function start_day_mode() {
+    // Canvas and settings
+    var canvas = document.getElementById('canvas'),
+        ctx = canvas.getContext('2d'),
+        width = canvas.width = window.innerWidth,
+        height = canvas.height = window.innerHeight,
+        paused = false;                                 // keep this set to false all the time so that shooting stars keep going
 
-function start() {
+    function updateDaySky() {
+        if (!paused) {
+            ctx.clearRect(0, 0, width, height);
+            // Create a linear gradient
+            const gradient = ctx.createLinearGradient(0, 0, 0, canvas.height);
+
+            // Add color stops
+            gradient.addColorStop(0, '#8DD0FC'); // Top color #360654
+            gradient.addColorStop(1, '#DDB4F6'); // Bottom color #17636A
+
+            // Use the gradient as the fill style
+            ctx.fillStyle = gradient;
+
+            ctx.fillRect(0, 0, width, height);
+            ctx.fill();
+        }
+        requestAnimationFrame(updateDaySky);
+    }
+
+    // Run
+    updateDaySky();
+
+    window.onfocus = function() {
+        paused = false;
+    }
+}
+
+// night mode background
+function start_night_mode() {
     // Helpers
     function lineToAngle(x1, y1, length, radians) {
         var x2 = x1 + length * Math.cos(radians),
@@ -133,7 +160,7 @@ function start() {
             // Create a linear gradient
             const gradient = ctx.createLinearGradient(0, 0, 0, canvas.height);
 
-            // Add color stops 
+            // Add color stops
             gradient.addColorStop(0, '#020107'); // Top color #360654
             gradient.addColorStop(1, '#201b46'); // Bottom color #17636A
 
@@ -253,7 +280,72 @@ function start() {
     window.onfocus = function() {
         paused = false;
     }
-//    window.onblur = function () {
-//      paused = true;
-//    };
 }
+
+// JS for theme toggling
+
+const themeToggle = document.querySelector("#theme-toggle");
+
+themeToggle.addEventListener('click', () => {
+    document.body.classList.contains("light-theme")
+        ? enableDarkMode()
+        : enableLightMode();
+});
+
+function enableDarkMode(){
+    document.body.classList.remove("light-theme");
+    document.body.classList.add("dark-theme");
+    themeToggle.setAttribute("aria-label", "Switch to light theme");
+    themeToggle.setAttribute("title", "Switch to light theme");
+    themeToggle.setAttribute("data-attribute", "dark");
+    setTimeout(start_night_mode, 100);
+};
+
+function enableLightMode(){
+    document.body.classList.remove("dark-theme");
+    document.body.classList.add("light-theme");
+    themeToggle.setAttribute("aria-label", "Switch to dark theme");
+    themeToggle.setAttribute("title", "Switch to dark theme");
+    themeToggle.setAttribute("data-attribute", "light");
+    setTimeout(start_day_mode, 100);
+};
+
+function setThemePreference(){
+    if(window.matchMedia("(prefers-color-scheme:dark)").matches){
+        enableDarkMode();
+        return;
+    }
+    enableLightMode();
+}
+
+document.onload = setThemePreference();
+
+// JS local storage for theme
+
+// store theme
+
+const storeTheme = function(theme){
+    localStorage.setItem("theme", theme);
+}
+
+themeToggle.addEventListener('click', () => {
+    storeTheme(themeToggle.getAttribute('data-attribute'));
+});
+
+
+//apply theme
+
+const retrieveTheme = function() {
+    const activeTheme = localStorage.getItem("theme");
+    if (activeTheme === "dark") {
+        enableDarkMode();
+    }
+    else{
+        enableLightMode();
+    }
+}
+
+document.onload = retrieveTheme();
+
+
+

@@ -132,7 +132,7 @@ p {
 
 .heart {
     position: fixed;
-    font-size: 1.5rem;
+    font-size: 1rem;
     top: -1vh;
     transform: translateY(0);
     animation: fall 3s linear forwards;

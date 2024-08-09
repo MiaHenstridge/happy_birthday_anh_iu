@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d1408f94-d4e6-4ddc-b1b6-b71454fb4dbe" name="Changes" comment="changed heart size to smaller (1rem)">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
+    <list default="true" id="d1408f94-d4e6-4ddc-b1b6-b71454fb4dbe" name="Changes" comment="disable ios automatic detection of numbers as clickable links in text">
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -206,7 +205,15 @@
       <option name="project" value="LOCAL" />
       <updated>1723209773507</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="disable ios automatic detection of numbers as clickable links in text">
+      <option name="closed" value="true" />
+      <created>1723210090610</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1723210090610</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -235,6 +242,7 @@
     <MESSAGE value="edited font-size of small text" />
     <MESSAGE value="added heart rain effect in day mode" />
     <MESSAGE value="changed heart size to smaller (1rem)" />
-    <option name="LAST_COMMIT_MESSAGE" value="changed heart size to smaller (1rem)" />
+    <MESSAGE value="disable ios automatic detection of numbers as clickable links in text" />
+    <option name="LAST_COMMIT_MESSAGE" value="disable ios automatic detection of numbers as clickable links in text" />
   </component>
 </project>

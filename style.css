@@ -157,7 +157,7 @@ p {
     height: 100%;
     background: var(--bg-color);
     z-index: -99;
-    background: url(./img/day_bg.png) no-repeat center center;
+    background: url(https://cdn.dribbble.com/users/3399110/screenshots/8352973/media/c13f95befd51386be5932edec429be98.png) no-repeat center center;
     background-size: cover;
     overflow: hidden;
 }

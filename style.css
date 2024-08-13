@@ -177,7 +177,7 @@ p {
     left: 0;
     width: 20px;
     height: 20px;
-    background: url(./img/leaf.svg) no-repeat;
+    background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/125707/leaf.svg) no-repeat;
     background-size: 100%;
     transform-style: preserve-3d;
     backface-visibility: visible;

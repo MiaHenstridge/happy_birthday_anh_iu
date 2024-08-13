@@ -24,9 +24,9 @@
 }
 
 .light-theme {
-    --bg-color: #A1C9FB;
+    --bg-color: #FAF8D4;
     --text-color: #171A21;
-    --text-cover-color: #A1C9FB;
+    --text-cover-color: #f6e4de;
 }
 
 .dark-theme {
@@ -134,12 +134,53 @@ p {
     color: inherit;
 }
 
+/*
 .heart {
     position: fixed;
     font-size: 1rem;
     top: -1vh;
     transform: translateY(0);
     animation: fall 3s linear forwards;
+}
+*/
+
+
+/* leaves animation */
+.falling-leaves {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: var(--bg-color);
+    z-index: -99;
+    background: url(./img/day_bg.png) no-repeat center center;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.leaf-scene {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    transform-style: preserve-3d;
+}
+
+.leaf-scene div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    background: url(./img/leaf.svg) no-repeat;
+    background-size: 100%;
+    transform-style: preserve-3d;
+    backface-visibility: visible;
 }
 
 /* theme toggle button */

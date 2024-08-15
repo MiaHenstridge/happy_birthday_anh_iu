@@ -68,6 +68,8 @@ function start_day_mode() {
             leaf.y += leaf.ySpeed;
             leaf.rotation.value += leaf.rotation.speed;
 
+            // leaf.el.style.background = 'url(./img/leaf.svg) no-repeat';
+
             var t = 'translateX( ' + leaf.x + 'px ) translateY( ' + leaf.y + 'px ) translateZ( ' + leaf.z + 'px )  rotate' + leaf.rotation.axis + '( ' + leaf.rotation.value + 'deg )';
 
             if (leaf.rotation.axis !== 'X') {
@@ -479,9 +481,11 @@ function enableLightMode(){
 
 function setThemePreference(){
     if(window.matchMedia("(prefers-color-scheme:dark)").matches){
+        console.log('prefers-color-scheme:dark');
         enableDarkMode();
         return;
     }
+    console.log('prefers-color-scheme:light');
     enableLightMode();
 }
 

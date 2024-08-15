@@ -147,7 +147,7 @@ p {
     height: 100%;
     background: var(--bg-color);
     z-index: -99;
-    background: url(./img/day_bg_optimized.png) no-repeat center center;
+    background: url(./img/day_bg.jpeg) no-repeat center center;
     background-size: cover;
     overflow: hidden;
 }

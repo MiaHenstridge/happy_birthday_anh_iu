@@ -35,6 +35,14 @@
     --text-cover-color: #090715;
 }
 
+@media (prefers-color-scheme: dark) {
+  :root {
+    --primary-text: #d8d8f6;
+    --secondary-text: #fff;
+    --primary-bg: #232323;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
     *,
     *::before,

@@ -262,7 +262,7 @@ function start_night_mode() {
         starOpacityDelta = 0.5,
         shootingStarOpacityDelta = 0.01,
         trailLengthDelta = 0.01,
-        shootingStarEmittingInterval = 500,
+        shootingStarEmittingInterval = 1000,
         shootingStarLifeTime = 500,
         maxTrailLength = 300,
         starBaseRadius = 2,
